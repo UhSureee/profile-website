@@ -169,7 +169,7 @@ img {
     gap: 20px;
 }
 
-#skills-list li {
+.item {
     background-color: var(--accent-color);
     padding: 10px 20px;
     border-radius: 5px;
