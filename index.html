@@ -1,84 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Elisea Profile Page</title>
+    <title>Daniel Elisea | Professional Portfolio</title>
+    <meta name="description" content="Professional portfolio of Daniel Elisea featuring administrative operations, executive support, project coordination, reporting, eCommerce, and web development experience.">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav id="navbar">
-        <ul id="nav-list">
-            <li><a href="#shopify-title">Shopify Experience</a></li>
-            <li><a href="#amazon-title">Amazon Experience</a></li>
-            <li><a href="#ebay-experience">eBay Experience</a></li>
-            <li><a href="#skills-title">Skills</a></li>
-            <li><a href="#contact-title">Contact Me</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="#home" class="logo">Daniel <span>Elisea</span></a>
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#ecommerce">eCommerce</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Daniel-Elisea-Resume.pdf" target="_blank" class="nav-resume">Resume</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Header Section (Title, About Me, Image) -->
-    <header id="header">
-        <div id="header-content">
-            <h1 id="header-title"></h1>
-            <p id="about-me">I specialize in the full eCommerce lifecycle, managing everything from
-product photography, Photoshop editing, and graphic design to creating
-listings, running digital advertising, and optimizing for SEO and conversions. <br><br>I
-also bring web development skills (HTML/CSS/Javascript), enabling me to
-build and customize websites that deliver smooth, high-converting customer
-experiences. By combining creativity, technical expertise, and data-driven
-strategies, I ensure products not only look great but also perform strongly in
-search, sales, and overall online growth.</p>
-        </div>
-        <img id="profile-pic" src="Website.jpg" alt="Profile Picture">
-    </header>
-    
-    <main>
-        <h2 id="work-experience-title">Work Experience</h2>        
-        <div id='work-experience'>
-            <section id="project-1">
-                <h2 id="shopify-title">Shopify</h2>
-                <img src="QJZ Website.png" alt="QJZ Bearings Website Screenshot" id="qjz-website-screenshot">
-                <a href="https://qjz-bearings.com">QJZ Bearings Website</a>
-            </section>
-            <section id="project-2">
-                <h2 id="amazon-title">Amazon</h2>
-                <img src="Amazon Website.png" alt="Amazon Store Screenshot" id="amazon-store-screenshot">
-                <a href="https://www.amazon.com/stores/QJZ/page/DA865218-BBB6-415D-BB75-2BB2359A8081?lp_asin=B07XLD6VXN&ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto">Amazon Work</a>
-            </section>
-                <section id="project-3">
-                <h2 id="ebay-experience">eBay</h2>
-                <img src="Ebay Website.png" alt="eBay Store Screenshot" id="ebay-store-screenshot">
-                <a href="https://www.ebay.com/str/icablez?_trksid=p4429486.m3561.l161211">eBay Work</a>
-            </section>
-        </div>
-        <div id="skills-section">
-            <section id="skills">
-            <h2 id="skills-title">Skills</h2>
-            <ul id="skills-list">
-                <li class="item" data-aos="flip-up">Product Photography</li>
-                <li class="item" data-aos="flip-up">Photoshop Editing</li>
-                <li class="item" data-aos="flip-up">Graphic Design</li>
-                <li class="item" data-aos="flip-up">eCommerce Strategy</li>
-                <li class="item" data-aos="flip-up">HTML/CSS/Javascript</li>
-                <li class="item" data-aos="flip-up">SEO Optimization</li>
-                <li class="item" data-aos="flip-up">Digital Advertising</li>
-            </ul>
-            </section>
-        </div>
-        <div id="contact-section">
-            <section id="contact">
-            <h2 id="contact-title">Contact Me</h2>
-            <p id="contact-info">Email: <a href="mailto:dannyelisea@gmail.com">dannyelisea@gmail.com</a></p>
-            <p id="phone-info">Phone: (909) 680-0804</p>
-            </section>
-        </div>
-    </main>
-    <script src="script.js"></script>
-    <footer>
-        <p>&copy; 2025 - Daniel Elisea</p>
-    </footer>
-</body>
+    <!-- Hero -->
+    <header id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow">Professional Portfolio</p>
+                <h1>Daniel <span>Elisea</span></h1>
+                <p class="hero-title">Administrative Operations | Executive Support | Project Coordination</p>
+                <p class="hero-description">
+                    Administrative professional with 9+ years of experience supporting leadership, coordinating cross-functional priorities, preparing business reports, managing projects, and improving day-to-day operations. My background also includes eCommerce management, website development, digital marketing, and data analysis.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="button button-primary">View My Work</a>
+                    <a href="Daniel-Elisea-Resume.pdf" target="_blank" class="button button-secondary">View Resume</a>
+                </div>
+            </div>
 
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <img src="Website.jpg" alt="Daniel Elisea" id="profile-pic">
+                </div>
+                <div class="experience-badge">
+                    <strong>9+</strong>
+                    <span>Years of Professional Experience</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">About Me</p>
+                    <h2>More than administrative support.</h2>
+                    <p>I work across departments, projects, systems, and priorities to help leadership and teams stay organized, informed, and moving forward.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <p>My professional background has given me the opportunity to work across executive support, operations, finance, sales, marketing, eCommerce, facilities, and project coordination.</p>
+                        <p>Working in fast-paced business environments has taught me how to manage changing priorities, communicate across departments, solve problems, and take ownership of projects from beginning to completion.</p>
+                        <p>I also enjoy learning new systems and technical skills. In addition to my administrative and operational background, I have experience with HTML, CSS, JavaScript, eCommerce platforms, Photoshop, SEO, and digital marketing.</p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <article class="highlight-card">
+                            <strong>Executive Support</strong>
+                            <p>Supporting senior leadership with reports, meetings, travel, presentations, priorities, and special projects.</p>
+                        </article>
+
+                        <article class="highlight-card">
+                            <strong>Project Coordination</strong>
+                            <p>Tracking deadlines, costs, status updates, documentation, invoices, and action items.</p>
+                        </article>
+
+                        <article class="highlight-card">
+                            <strong>Cross-Functional</strong>
+                            <p>Working with Finance, HR, Marketing, Sales, Operations, vendors, and leadership.</p>
+                        </article>
+
+                        <article class="highlight-card">
+                            <strong>Technical Skills</strong>
+                            <p>Combining business experience with Excel, QuickBooks, eCommerce systems, and web development.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Examples of what I do.</h2>
+                    <p>A selection of reporting, project coordination, operations, eCommerce, and business projects from my professional experience.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image">
+                                <span>📊</span>
+                                <strong>Executive Reporting Dashboard</strong>
+                                <small>Sample project coming soon</small>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Reporting & Analytics</span>
+                            <h3>Executive Reporting</h3>
+                            <p>Preparing management reports that organize revenue, expenses, outstanding invoices, project status, costs, and other business information for leadership review.</p>
+                            <ul class="project-tags">
+                                <li>Microsoft Excel</li>
+                                <li>PivotTables</li>
+                                <li>VLOOKUP</li>
+                                <li>QuickBooks</li>
+                                <li>Data Analysis</li>
+                            </ul>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image">
+                                <span>✓</span>
+                                <strong>Project Tracking System</strong>
+                                <small>Sample project coming soon</small>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Project Coordination</span>
+                            <h3>Project Tracking & Follow-Up</h3>
+                            <p>Coordinating projects by tracking status, estimated completion dates, costs, invoices, responsibilities, deadlines, and outstanding action items.</p>
+                            <ul class="project-tags">
+                                <li>Project Tracking</li>
+                                <li>Scheduling</li>
+                                <li>Cost Tracking</li>
+                                <li>Documentation</li>
+                                <li>Follow-Up</li>
+                            </ul>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image">
+                                <span>⚙</span>
+                                <strong>Operations & Process Improvement</strong>
+                                <small>Sample project coming soon</small>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Business Operations</span>
+                            <h3>Process Improvement</h3>
+                            <p>Developing organized procedures, documentation, tracking systems, and workflows to improve consistency and communication across business operations.</p>
+                            <ul class="project-tags">
+                                <li>Process Improvement</li>
+                                <li>Documentation</li>
+                                <li>Training</li>
+                                <li>Operations</li>
+                                <li>Problem Solving</li>
+                            </ul>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image">
+                                <span>🏢</span>
+                                <strong>Facilities Coordination</strong>
+                                <small>Sample project coming soon</small>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Facilities & Administration</span>
+                            <h3>Facilities Coordination</h3>
+                            <p>Coordinating maintenance, inspections, vendors, certifications, documentation, preventive maintenance, repair projects, and follow-up requirements.</p>
+                            <ul class="project-tags">
+                                <li>Vendor Coordination</li>
+                                <li>Inspections</li>
+                                <li>Maintenance</li>
+                                <li>Compliance Tracking</li>
+                                <li>Records</li>
+                            </ul>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- eCommerce -->
+        <section id="ecommerce" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">eCommerce & Digital</p>
+                    <h2>Building and managing online business.</h2>
+                    <p>My experience includes product management, eCommerce operations, product photography, graphic design, SEO, advertising, website development, and online sales.</p>
+                </div>
+
+                <div class="commerce-grid">
+                    <article class="commerce-card">
+                        <div class="commerce-image">
+                            <img src="QJZ Website.png" alt="QJZ Bearings website">
+                        </div>
+                        <div class="commerce-content">
+                            <span class="project-category">Shopify</span>
+                            <h3>QJZ Bearings Website</h3>
+                            <p>Managed product content, categories, product information, photography, website improvements, SEO, catalog organization, and ongoing eCommerce updates.</p>
+                            <ul class="project-tags">
+                                <li>Shopify</li>
+                                <li>SEO</li>
+                                <li>Product Data</li>
+                                <li>Photography</li>
+                                <li>Web Content</li>
+                            </ul>
+                            <a href="https://qjz-bearings.com" target="_blank" rel="noopener noreferrer" class="project-link">Visit Website →</a>
+                        </div>
+                    </article>
+
+                    <article class="commerce-card">
+                        <div class="commerce-image">
+                            <img src="Amazon Website.png" alt="QJZ Amazon Store">
+                        </div>
+                        <div class="commerce-content">
+                            <span class="project-category">Amazon</span>
+                            <h3>Amazon Store Management</h3>
+                            <p>Managed product listings, images, descriptions, digital advertising, product data, pricing, and storefront content for an industrial product brand.</p>
+                            <ul class="project-tags">
+                                <li>Amazon</li>
+                                <li>Listings</li>
+                                <li>Advertising</li>
+                                <li>Product Content</li>
+                                <li>Sales Analysis</li>
+                            </ul>
+                            <a href="https://www.amazon.com/stores/QJZ/page/DA865218-BBB6-415D-BB75-2BB2359A8081" target="_blank" rel="noopener noreferrer" class="project-link">Visit Store →</a>
+                        </div>
+                    </article>
+
+                    <article class="commerce-card">
+                        <div class="commerce-image">
+                            <img src="Ebay Website.png" alt="eBay Store">
+                        </div>
+                        <div class="commerce-content">
+                            <span class="project-category">eBay</span>
+                            <h3>eBay Store Management</h3>
+                            <p>Created and managed product listings, product photography, descriptions, categories, pricing, and online merchandising.</p>
+                            <ul class="project-tags">
+                                <li>eBay</li>
+                                <li>Product Listings</li>
+                                <li>Photography</li>
+                                <li>Pricing</li>
+                                <li>Merchandising</li>
+                            </ul>
+                            <a href="https://www.ebay.com/str/icablez" target="_blank" rel="noopener noreferrer" class="project-link">Visit Store →</a>
+                        </div>
+                    </article>
+
+                    <article class="commerce-card">
+                        <div class="commerce-image">
+                            <div class="placeholder-image">
+                                <span>&lt;/&gt;</span>
+                                <strong>Website Development</strong>
+                                <small>HTML / CSS / JavaScript</small>
+                            </div>
+                        </div>
+                        <div class="commerce-content">
+                            <span class="project-category">Web Development</span>
+                            <h3>Front-End Development</h3>
+                            <p>Building and customizing responsive websites using HTML, CSS, and JavaScript while focusing on usability, organization, and professional presentation.</p>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Responsive Design</li>
+                                <li>UX</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Business experience with technical range.</h2>
+                    <p>My experience combines administration, operations, reporting, project coordination, eCommerce, and technical skills.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-group">
+                        <h3>Administration & Operations</h3>
+                        <ul class="skill-list">
+                            <li>Executive Support</li>
+                            <li>Project Coordination</li>
+                            <li>Calendar Management</li>
+                            <li>Travel Coordination</li>
+                            <li>Business Reporting</li>
+                            <li>Vendor Coordination</li>
+                            <li>Expense Tracking</li>
+                            <li>Budget Tracking</li>
+                            <li>Process Improvement</li>
+                            <li>Recordkeeping</li>
+                            <li>Data Entry</li>
+                            <li>Cross-Functional Support</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3>Software & Technical</h3>
+                        <ul class="skill-list">
+                            <li>Microsoft Excel</li>
+                            <li>PivotTables</li>
+                            <li>VLOOKUP</li>
+                            <li>Microsoft Word</li>
+                            <li>Microsoft Outlook</li>
+                            <li>QuickBooks</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Shopify</li>
+                            <li>Amazon Seller Central</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3>eCommerce & Marketing</h3>
+                        <ul class="skill-list">
+                            <li>eCommerce Management</li>
+                            <li>SEO</li>
+                            <li>Digital Advertising</li>
+                            <li>Product Photography</li>
+                            <li>Photo Editing</li>
+                            <li>Graphic Design</li>
+                            <li>Product Listings</li>
+                            <li>Catalog Management</li>
+                            <li>Sales Analysis</li>
+                            <li>Website Management</li>
+                            <li>Product Data</li>
+                            <li>Online Merchandising</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let's connect.</h2>
+                    <p>Interested in discussing an opportunity or learning more about my professional experience? Feel free to reach out.</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:dannyelisea@gmail.com" class="button button-primary">Email Me</a>
+                        <a href="Daniel-Elisea-Resume.pdf" target="_blank" class="button button-secondary">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Daniel Elisea</p>
+            <p>Professional Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
