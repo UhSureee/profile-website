@@ -1,46 +1,46 @@
-const headerTitle = document.getElementById("header-title");
-const textParts = [
-  { text: "Hi,", className: "red-text" }, // red "Hi,"
-  { text: " I'm Daniel Elisea" }, // normal text
-];
-
-//Type Writer Animation
-function typeWriter(element, parts, delay = 120) {
-  let partIndex = 0;
-  let charIndex = 0;
-
-  function type() {
-    if (partIndex >= parts.length) return;
-
-    const part = parts[partIndex];
-
-    if (!part.element) {
-      // Create span if className exists
-      if (part.className) {
-        part.element = document.createElement("span");
-        part.element.className = part.className;
-        element.appendChild(part.element);
-      } else {
-        part.element = element;
-      }
-    }
-
-    if (charIndex < part.text.length) {
-      part.element.innerHTML += part.text.charAt(charIndex);
-      charIndex++;
-      setTimeout(type, delay);
-    } else {
-      partIndex++;
-      charIndex = 0;
-      setTimeout(type, delay);
-    }
-  }
-
-  type();
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-typeWriter(headerTitle, textParts);
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-AOS.init({
-  duration: 1200,
-});
+/* Navbar Scroll Effect */
+#navbar {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Hover Movement */
+.highlight-card,
+.project-card,
+.commerce-card,
+.skill-group {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover,
+.project-card:hover,
+.commerce-card:hover,
+.skill-group:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Movement */
+.button {
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
