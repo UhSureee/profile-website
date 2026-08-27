@@ -1,4 +1,3 @@
-```css
 /* Root Colors */
 :root {
     --black: #000000;
@@ -6,7 +5,6 @@
     --orange: #fca311;
     --alabaster-grey: #e5e5e5;
     --white: #ffffff;
-
     --background-color: #000000;
     --section-color: #0b0f18;
     --card-color: #14213d;
@@ -317,8 +315,7 @@ section {
     gap: 24px;
 }
 
-.project-card,
-.commerce-card {
+.project-card {
     position: relative;
     overflow: hidden;
     background-color: var(--prussian-blue);
@@ -326,8 +323,7 @@ section {
     border-radius: 15px;
 }
 
-.project-card::before,
-.commerce-card::before {
+.project-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -338,13 +334,11 @@ section {
     transition: height 0.35s ease;
 }
 
-.project-card:hover::before,
-.commerce-card:hover::before {
+.project-card:hover::before {
     height: 100%;
 }
 
-.project-content,
-.commerce-content {
+.project-content {
     padding: 34px;
 }
 
@@ -368,15 +362,13 @@ section {
     text-transform: uppercase;
 }
 
-.project-content h3,
-.commerce-content h3 {
+.project-content h3 {
     margin: 0 0 14px;
     color: var(--white);
     font-size: 1.45rem;
 }
 
-.project-content p,
-.commerce-content p {
+.project-content p {
     margin: 0 0 22px;
     color: var(--alabaster-grey);
 }
@@ -407,13 +399,6 @@ section {
 
 .project-link:hover {
     text-decoration: underline;
-}
-
-/* eCommerce */
-.commerce-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
 }
 
 /* Skills */
@@ -516,14 +501,12 @@ footer {
 /* Card Movement */
 .highlight-card,
 .project-card,
-.commerce-card,
 .skill-group {
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .highlight-card:hover,
 .project-card:hover,
-.commerce-card:hover,
 .skill-group:hover {
     transform: translateY(-6px);
     border-color: var(--orange);
@@ -576,7 +559,6 @@ footer {
     }
 
     .project-grid,
-    .commerce-grid,
     .skills-grid,
     .about-highlights {
         grid-template-columns: 1fr;
@@ -586,8 +568,7 @@ footer {
         padding: 75px 0;
     }
 
-    .project-content,
-    .commerce-content {
+    .project-content {
         padding: 28px;
     }
 
@@ -632,8 +613,7 @@ footer {
         padding: 45px 22px;
     }
 
-    .project-content,
-    .commerce-content {
+    .project-content {
         padding: 24px;
     }
 }
@@ -652,10 +632,8 @@ footer {
 
     .highlight-card,
     .project-card,
-    .commerce-card,
     .skill-group,
     .button {
         transition: none;
     }
 }
-```
